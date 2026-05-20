@@ -1,0 +1,80 @@
+﻿@model ConnectFlow.Models.Configuracao
+
+@{
+    ViewData["Title"] = "Conectividade de Dados";
+}
+
+<style>
+    /* Força o elemento pai a ocupar 100% da altura da tela e centralizar o filho */
+    .tela-inteira {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh; 
+        width: 100%;
+    }
+
+    /* Estilo dos cards de prioridade */
+    .objective-card {
+        border: 2px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 15px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+        background-color: #ffffff;
+    }
+    .objective-input { display: none; }
+    .objective-input:checked + .objective-card {
+        border-color: #2563eb;
+        background-color: #eff6ff;
+    }
+</style>
+
+<div class="tela-inteira">
+    <div class="card bg-white text-dark shadow-sm p-4 border-0" style="border-radius: 15px; max-width: 800px; width: 90%;">
+        
+        <h3 class="fw-bold mb-1">Configuração de Conectividade</h3>
+        <p class="text-muted small mb-4">Selecione o objetivo técnico e o sistema para otimizarmos sua integração.</p>
+
+        <form asp-action="Configuracao">
+            <input type="hidden" asp-for="IdCliente" />
+
+            <h6 class="fw-bold mb-3">1. Qual é a sua prioridade principal para esta conexão?</h6>
+            
+            <input type="radio" name="PrioridadeTecnica" id="perf" value="Performance" class="objective-input">
+            <label for="perf" class="objective-card">
+                <strong>Performance Máxima</strong><br>
+                <small class="text-muted">Priorizar velocidade de leitura e consultas complexas.</small>
+            </label>
+
+            <input type="radio" name="PrioridadeTecnica" id="seg" value="Seguranca" class="objective-input">
+            <label for="seg" class="objective-card">
+                <strong>Segurança e Continuidade</strong><br>
+                <small class="text-muted">Priorizar espelhamento e backups automáticos.</small>
+            </label>
+
+            <input type="radio" name="PrioridadeTecnica" id="esc" value="Escalabilidade" class="objective-input">
+            <label for="esc" class="objective-card">
+                <strong>Escalabilidade (High Traffic)</strong><br>
+                <small class="text-muted">Priorizar distribuição de carga e alta disponibilidade.</small>
+            </label>
+
+            <div class="form-group mb-4 mt-3">
+                <label class="fw-bold small mb-1">2. Informe o tipo de banco de dados de origem *</label>
+                <select class="form-select text-muted">
+                    <option value="">Selecione o sistema...</option>
+                    <option value="MySQL">MySQL</option>
+                    <option value="PostgreSQL">PostgreSQL</option>
+                    <option value="SQLServer">SQL Server</option>
+                    <option value="Oracle">Oracle Database</option>
+                </select>
+            </div>
+
+            <div class="d-flex gap-3">
+                <a asp-action="Create" class="btn btn-outline-secondary w-100 py-2">Voltar</a>
+                <button type="submit" class="btn btn-primary w-100 py-2" style="background-color: #2563eb;">Próximo</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,162 @@
+﻿@model ConnectFlow.Models.Cliente
+
+@{
+    ViewData["Title"] = "Cadastro de Cliente";
+}
+
+<style>
+    body {
+        background-color: #0f172a !important;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .main-content {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    /* --- CAIXA BRANCA DO FORMULÁRIO --- */
+    .custom-card {
+        background-color: #ffffff !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 16px;
+        padding: 35px;
+        width: 100%;
+        max-width: 500px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    /* --- LABELS DOS CAMPOS (PRETO) --- */
+    .form-label {
+        color: #000000 !important;
+        font-weight: 600;
+        margin-bottom: 8px;
+        display: block;
+        font-size: 14px;
+    }
+
+    /* --- COMBATE AO CSS GLOBAL DO BOOTSTRAP (MUDANÇA AQUI) --- */
+    /* Mirando direto na combinação de classes para arrancar o fundo escuro de vez */
+    input.form-control.custom-input,
+    .custom-input {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 8px;
+        padding: 12px;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 15px;
+        transition: all 0.2s ease-in-out;
+    }
+
+        /* Garante fundo branco ao passar o mouse */
+        input.form-control.custom-input:hover,
+        .custom-input:hover {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+            border-color: #94a3b8 !important;
+        }
+
+        /* Garante fundo branco quando clicado/focado */
+        input.form-control.custom-input:focus,
+        .custom-input:focus {
+            outline: none !important;
+            background-color: #ffffff !important;
+            color: #000000 !important;
+            border-color: #2563eb !important;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
+        }
+     
+        /* Cor do texto de exemplo (Placeholder) */
+        input.form-control.custom-input::placeholder,
+        .custom-input::placeholder {
+            color: #64748b !important;
+            opacity: 1 !important;
+        }
+
+    /* --- BOTÃO --- */
+    .custom-btn {
+        background: linear-gradient(135deg, #38bdf8, #2563eb);
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        padding: 14px;
+        font-weight: 700;
+        font-size: 16px;
+        width: 100%;
+        cursor: pointer;
+        transition: opacity 0.2s;
+        margin-top: 10px;
+    }
+
+        .custom-btn:hover {
+            opacity: 0.9;
+        }
+</style>
+
+<main class="main-content">
+    <div class="custom-card">
+        <h2 style="color: #000000 !important; font-weight: 700; text-align: center; margin-top: 0; margin-bottom: 10px;">Dados da Empresa</h2>
+        <h6 style="color: #475569 !important; text-align: center; font-weight: 400; margin-bottom: 25px;">Preencha as informações da sua empresa</h6>
+
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div style="margin-bottom: 18px;">
+                <label asp-for="Cnpj" class="form-label">CNPJ *</label>
+                <input asp-for="Cnpj" class="form-control custom-input" maxlength="14" placeholder="00.000.000/0000-00" />
+                <span asp-validation-for="Cnpj" class="text-danger" style="font-size: 13px;"></span>
+            </div>
+
+            <div style="margin-bottom: 18px;">
+                <label asp-for="RazaoSocial" class="form-label">Razão Social *</label>
+                <input asp-for="RazaoSocial" class="form-control custom-input" placeholder="Ex: Tech Solutions LTDA" />
+                <span asp-validation-for="RazaoSocial" class="text-danger" style="font-size: 13px;"></span>
+            </div>
+
+            <div style="margin-bottom: 18px;">
+                <label asp-for="NomeFantasia" class="form-label">Nome Fantasia *</label>
+                <input asp-for="NomeFantasia" class="form-control custom-input" placeholder="Ex: Tech Solutions" />
+                <span asp-validation-for="NomeFantasia" class="text-danger" style="font-size: 13px;"></span>
+            </div>
+
+            <div style="margin-bottom: 18px;">
+                <label asp-for="ResponsavelTecnico" class="form-label">Responsável Técnico *</label>
+                <input asp-for="ResponsavelTecnico" class="form-control custom-input" placeholder="Nome do responsável" />
+                <span asp-validation-for="ResponsavelTecnico" class="text-danger" style="font-size: 13px;"></span>
+            </div>
+
+            <div style="margin-bottom: 18px;">
+                <label asp-for="EmailCorporativo" class="form-label">E-mail Corporativo *</label>
+                <input asp-for="EmailCorporativo" class="form-control custom-input" placeholder="contato@empresa.com.br" />
+                <span asp-validation-for="EmailCorporativo" class="text-danger" style="font-size: 13px;"></span>
+            </div>
+
+            <div style="margin-bottom: 25px;">
+                <label asp-for="Telefone" class="form-label">Telefone *</label>
+                <input asp-for="Telefone" class="form-control custom-input" placeholder="(11) 99999-9999" />
+                <span asp-validation-for="Telefone" class="text-danger" style="font-size: 13px;"></span>
+            </div>
+
+            <div>
+                <button type="submit" class="custom-btn">Próximo</button>
+            </div>
+        </form>
+    </div>
+</main>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
