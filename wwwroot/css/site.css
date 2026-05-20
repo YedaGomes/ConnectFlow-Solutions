@@ -1,6 +1,4 @@
-    /* ==========================================================================
-       1. RESET GLOBAL E BASE (TELA EXPANDIDA ULTRA-WIDE)
-       ========================================================================== */
+    /* RESET GLOBAL E BASE (TELA EXPANDIDA ULTRA-WIDE) */
     * {
         box-sizing: border-box;
         margin: 0;
@@ -16,9 +14,8 @@
         overflow-x: hidden;
     }
 
-    /* ==========================================================================
-       2. CABEÇALHO (HEADER) - ALINHADO COM A EXPANSÃO DA TELA
-       ========================================================================== */
+    /* CABEÇALHO (HEADER) - ALINHADO COM A EXPANSÃO DA TELA*/
+
     header {
         display: flex;
         justify-content: space-between;
@@ -58,9 +55,8 @@
     nav ul li a:hover {
         color: #38bdf8 !important;}
 
-    /* ==========================================================================
-       3. SEÇÃO HERO (BLOCO DO TOPO AMPLIADO E ALINHADO COM AS SOLUÇÕES)
-       ========================================================================== */
+    /* SEÇÃO HERO (BLOCO DO TOPO AMPLIADO E ALINHADO COM AS SOLUÇÕES) */
+
     .hero {
         text-align: center;
         padding: 140px 0; 
@@ -116,9 +112,8 @@
         transform: translateY(-3px) scale(1.02);
     }
 
-    /* ==========================================================================
-       4. SEÇÃO DE SERVIÇOS (4 COLUNAS EM LINHA, GIGANTES E EXPANDIDAS)
-       ========================================================================== */
+    /* SEÇÃO DE SERVIÇOS */
+
     .servicos {
         padding: 110px 0;
         text-align: center;
@@ -187,9 +182,8 @@
         line-height: 1.6;
     }
 
-/* ==========================================================================
-   5. SEÇÃO SOBRE (CAIXA EXPANDIDA PRONTA PARA MAIS TEXTO)
-   ========================================================================== */
+    /* SEÇÃO SOBRE */
+
     .sobre-box {
         padding: 90px 0;
         text-align: center;
@@ -243,9 +237,7 @@
         text-align: left; 
     }
 
-    /* ==========================================================================
-       6. RODAPÉ (FOOTER UNIFICADO COBRINDO A TELA CHEIA)
-       ========================================================================== */
+    /* RODAPÉ */
     footer {
         background-color: #0b111e !important;
         padding: 30px 0;
@@ -264,10 +256,7 @@
         background-color: #0f172a !important;
     }
 
-
-        /* ==========================================================================
-       SEÇÃO SOBRE NÓS E CONTATO (LIMPO E SEM REPETIÇÕES)
-       ========================================================================== */
+    /* SEÇÃO SOBRE NÓS E CONTATO */
 
     .sobre-secao {
         background-color: #0b111e !important;
@@ -489,17 +478,12 @@
         opacity: 1 !important;
     }
 
-/* ==========================================================================
-   CORREÇÃO DEFINITIVA: ALINHAMENTO, CAMADAS E FUNDO BRANCO NAS TELAS
-   ========================================================================== */
-
-    /* 1. Garante que o Header fique sempre em uma camada ACIMA do conteúdo */
+   
     header {
         position: relative !important;
-        z-index: 1030 !important; /* Camada alta para nenhuma caixa passar por cima */
+        z-index: 1030 !important; 
     }
 
-/* 2. Força o fundo branco e texto escuro em QUALQUER caixa grande de página */
     .container .card,
     .container-fluid .card,
     main .card,
@@ -508,112 +492,88 @@
         color: #000000 !important;
         border: 1px solid #cbd5e1 !important;
     }
-
-    /* Garante a cor preta para TODOS os títulos e labels dentro dessas caixas brancas */
+       
     .container .card h2, .container .card h3, .container .card h6, .container .card label,
     main .card h2, main .card h3, main .card h6, main .card label {
         color: #000000 !important;
     }
 
-    /* 3. Alinha o container das páginas perfeitamente com a linha guia do Header */
+    
     .container.mt-4, main .container,
     .main-content {
         max-width: 90% !important;
         width: 1500px !important;
-        margin: 30px auto !important; /* Margem superior de 30px para afastar do header */
+        margin: 30px auto !important; 
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-
-
-
-
-
-    /* Configuração padrão e estática de todos os cards da seção de soluções */
+              
     .servicos .cards .card {
-        background-color: #111827 !important; /* Azul escuro/grafite fechado original */
-        border: 1px solid #1f2937 !important; /* Borda escura discreta por padrão */
-        border-radius: 16px !important; /* Cantos arredondados padrão */
+        background-color: #111827 !important; 
+        border: 1px solid #1f2937 !important;
+        border-radius: 16px !important;
         padding: 24px !important;
         box-shadow: none !important;
-        transition: all 0.3s ease !important; /* Transição suave para todas as animações (borda, sombra e subida) */
+        transition: all 0.3s ease !important; 
     }
 
-    /* Efeito dinâmico e interativo ao passar o mouse (Hover) em QUALQUER card */
-    .servicos .cards .card:hover {
-        transform: translateY(-8px) !important; /* Faz o card subir levemente */
-        border: 1px solid rgba(56, 189, 248, 0.5) !important; /* Acende a borda em azul claro */
-        box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2) !important; /* Cria o efeito neon/brilho azul por baixo */
+       .servicos .cards .card:hover {
+        transform: translateY(-8px) !important; 
+        border: 1px solid rgba(56, 189, 248, 0.5) !important; 
+        box-shadow: 0 10px 25px rgba(56, 189, 248, 0.2) !important; 
     }
 
-    /* Títulos dos cards em branco puro */
     .servicos .cards .card h3 {
         color: #ffffff !important;
         font-weight: 700 !important;
     }
 
-    /* Textos de descrição em cinza fosco */
-    .servicos .cards .card p {
+        .servicos .cards .card p {
         color: #9ca3af !important;
     }
 
-    /* Links "Saiba mais" no tom azul correto */
     .servicos .cards .card span {
         color: #38bdf8 !important;
     }
 
-    /* Isso força o padding em todo o corpo da página */
-    /* Espaçamento padrão para todas as páginas (incluindo formulários/MySQL/SAP) */
     body {
         padding-top: 110px !important;
     }
 
-    /* Espaçamento exclusivo para a página inicial */
     .home-page body {
         padding-top: 240px !important;
     }
 
+    /* PADRÃO VISUAL DE RECURSOS E SOLUÇÕES (COMPARTILHADO) */
 
-/* Imagens do Painel MySQL */
-
-/* ==========================================================================
-   PADRÃO VISUAL DE RECURSOS E SOLUÇÕES (COMPARTILHADO)
-   ========================================================================== */
-
-/* Contêiner unificado do bloco cinza para as imagens isométricas */
-/* 1. Preserva o tamanho e o comportamento do container cinza */
-/* 1. O Container Cinza (Mantém o fundo de vidro e centraliza o vetor) */
     .tech-image-container {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        max-width: 450px; /* Limite de largura da caixinha cinza */
-        height: 300px; /* Altura fixa padrão para todas as caixinhas ficarem iguais */
-        margin: 0 auto; /* Centraliza o bloco na coluna */
+        max-width: 450px; 
+        height: 300px; 
+        margin: 0 auto; 
         overflow: hidden;
         border-radius: 12px;
-        background-color: rgba(255, 255, 255, 0.03); /* Ajuste se o seu cinza for diferente */
+        background-color: rgba(255, 255, 255, 0.03); 
         border: 1px solid rgba(255, 255, 255, 0.08);
     }
-
-    /* 2. A Imagem (Faz o vetor ficar proporcional, centralizado e com um recuo) */
+        
     .tech-image-container img,
     .img-recurso {
-        width: auto !important; /* Remove o travamento de 100% que engolia a tela */
-        max-width: 85% !important; /* Garante que a imagem nunca vai colá-la nas bordas cinzas */
+        width: auto !important; 
+        max-width: 85% !important; 
         height: auto !important;
-        max-height: 85% !important; /* Dá o respiro vertical idêntico para todas */
-        object-fit: contain !important; /* MÁGICA: Reduz e encaixa o vetor sem cortar nada */
+        max-height: 85% !important; 
+        object-fit: contain !important; 
         display: block;
     }
 
-    /* Linha divisória padrão estilo Nexus (suave no tema escuro) */
     .recurso-divisor {
         border: 0;
         height: 1px;
         background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.15), transparent);
-        margin: 40px 0; /* Espaçamento perfeito entre as seções */
+        margin: 40px 0;
         opacity: 1;
     }
-

@@ -9,7 +9,7 @@
 </div>
 
 <style>
-    /* Banner Principal (Hero) */
+
     .hero-solucao {
         background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
         border-bottom: 1px solid #1e293b;
@@ -273,12 +273,12 @@
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script>
-    // Note que removi a reinclusão do bootstrap.bundle.min.js porque o _Layout já possui ele globalmente.
+
     $(document).ready(function () {
         $("#formDuvidaContato").on("submit", function (e) {
             e.preventDefault();
 
-            var nomeUsuario = $("#nomeApi").val(); // Corrigido ID que estava quebrando o alert anterior
+            var nomeUsuario = $("#nomeApi").val(); 
 
             alert("Obrigado pelo contato, " + nomeUsuario + "!\nSua mensagem foi enviada com sucesso para nossa Central de Dúvidas.");
 

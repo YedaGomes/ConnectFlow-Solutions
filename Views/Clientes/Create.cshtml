@@ -4,62 +4,59 @@
     ViewData["Title"] = "Cadastro de Cliente";
 }
 
-<style>
-    body {
-        background-color: #0f172a !important;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #ffffff;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-    }
+    <style>
+        body {
+            background-color: #0f172a !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-    .main-content {
-        flex: 1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 40px 20px;
-    }
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
 
-    /* --- CAIXA BRANCA DO FORMULÁRIO --- */
-    .custom-card {
-        background-color: #ffffff !important;
-        border: 1px solid #cbd5e1 !important;
-        border-radius: 16px;
-        padding: 35px;
-        width: 100%;
-        max-width: 500px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    }
+        .custom-card {
+            background-color: #ffffff !important;
+            border: 1px solid #cbd5e1 !important;
+            border-radius: 16px;
+            padding: 35px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        }
 
-    /* --- LABELS DOS CAMPOS (PRETO) --- */
-    .form-label {
-        color: #000000 !important;
-        font-weight: 600;
-        margin-bottom: 8px;
-        display: block;
-        font-size: 14px;
-    }
+        .form-label {
+            color: #000000 !important;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+            font-size: 14px;
+        }
 
-    /* --- COMBATE AO CSS GLOBAL DO BOOTSTRAP (MUDANÇA AQUI) --- */
-    /* Mirando direto na combinação de classes para arrancar o fundo escuro de vez */
-    input.form-control.custom-input,
-    .custom-input {
-        background-color: #ffffff !important;
-        color: #000000 !important;
-        border: 1px solid #cbd5e1 !important;
-        border-radius: 8px;
-        padding: 12px;
-        width: 100%;
-        box-sizing: border-box;
-        font-size: 15px;
-        transition: all 0.2s ease-in-out;
-    }
 
-        /* Garante fundo branco ao passar o mouse */
+        input.form-control.custom-input,
+        .custom-input {
+            background-color: #ffffff !important;
+            color: #000000 !important;
+            border: 1px solid #cbd5e1 !important;
+            border-radius: 8px;
+            padding: 12px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 15px;
+            transition: all 0.2s ease-in-out;
+        }
+
+
         input.form-control.custom-input:hover,
         .custom-input:hover {
             background-color: #ffffff !important;
@@ -67,7 +64,7 @@
             border-color: #94a3b8 !important;
         }
 
-        /* Garante fundo branco quando clicado/focado */
+  
         input.form-control.custom-input:focus,
         .custom-input:focus {
             outline: none !important;
@@ -77,27 +74,27 @@
             box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15) !important;
         }
      
-        /* Cor do texto de exemplo (Placeholder) */
+
         input.form-control.custom-input::placeholder,
         .custom-input::placeholder {
             color: #64748b !important;
             opacity: 1 !important;
         }
 
-    /* --- BOTÃO --- */
-    .custom-btn {
-        background: linear-gradient(135deg, #38bdf8, #2563eb);
-        color: #ffffff;
-        border: none;
-        border-radius: 8px;
-        padding: 14px;
-        font-weight: 700;
-        font-size: 16px;
-        width: 100%;
-        cursor: pointer;
-        transition: opacity 0.2s;
-        margin-top: 10px;
-    }
+
+        .custom-btn {
+            background: linear-gradient(135deg, #38bdf8, #2563eb);
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 14px;
+            font-weight: 700;
+            font-size: 16px;
+            width: 100%;
+            cursor: pointer;
+            transition: opacity 0.2s;
+            margin-top: 10px;
+        }
 
         .custom-btn:hover {
             opacity: 0.9;

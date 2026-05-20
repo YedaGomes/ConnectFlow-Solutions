@@ -25,7 +25,6 @@ namespace ConnectFlow.Controllers
             return View(await _context.Clientes.ToListAsync());
         }
 
-        // GET: Clientes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -42,16 +41,12 @@ namespace ConnectFlow.Controllers
 
             return View(cliente);
         }
-
         // GET: Clientes/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Clientes/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("IdCliente,Cnpj,RazaoSocial,NomeFantasia,ResponsavelTecnico,EmailCorporativo,Telefone")] Cliente cliente)
@@ -65,7 +60,6 @@ namespace ConnectFlow.Controllers
             return View(cliente);
         }
 
-        // GET: Clientes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -81,9 +75,6 @@ namespace ConnectFlow.Controllers
             return View(cliente);
         }
 
-        // POST: Clientes/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdCliente,Cnpj,RazaoSocial,NomeFantasia,ResponsavelTecnico,EmailCorporativo,Telefone")] Cliente cliente)
@@ -115,8 +106,6 @@ namespace ConnectFlow.Controllers
             }
             return View(cliente);
         }
-
-        // GET: Clientes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -134,7 +123,6 @@ namespace ConnectFlow.Controllers
             return View(cliente);
         }
 
-        // POST: Clientes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
@@ -154,7 +142,6 @@ namespace ConnectFlow.Controllers
             return _context.Clientes.Any(e => e.IdCliente == id);
         }
     
-
          public IActionResult Configuracao(int id)
         {
             var config = new ConnectFlow.Models.Configuracao { IdCliente = id };
@@ -164,33 +151,27 @@ namespace ConnectFlow.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Configuracao(int id, string volumeDados)
         {
-            // Esse código é o que o botão "Próximo" da tela de configuração chama.
-            // Ele simplesmente pega o ID e te joga para a próxima tela: Acessibilidade.
+
             return RedirectToAction("Acessibilidade", new { id = id });
         }
 
-        // 1. Método que ABRE a tela (Caminho: /Clientes/Acessibilidade/ID)
         [HttpGet]
         public IActionResult Acessibilidade(int id)
         {
-            // Isso garante que o C# saiba qual cliente estamos configurando
             var config = new ConnectFlow.Models.Configuracao { IdCliente = id };
 
-            // Forçamos o retorno da View específica
             return View("Acessibilidade", config);
         }
-
-        // 2. Método que PROCESSA o botão Próximo (POST)
+        // Método que PROCESSA o botão Próximo (POST)
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Acessibilidade(int id, bool suporteLibras, bool notificacoesEmail)
         {
-            // Aqui você salvaria as preferências no banco se quisesse.
-            // Por enquanto, vamos apenas navegar para a tela final:
+
             return RedirectToAction("Sucesso");
         }
 
-        // Crie este novo método para abrir a tela de sucesso:
+        // Método para abrir a tela de sucesso:
         public IActionResult Sucesso()
         {
             return View();

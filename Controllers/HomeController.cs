@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Diagnostics;
-// NOVOS USINGS ADICIONADOS PARA O ENVIO DE E-MAIL:
 using System.Net;
 using System.Net.Mail;
 
@@ -49,12 +48,9 @@ namespace ConnectFlow.Controllers
         [Route("Creditos")]
         public IActionResult Creditos()
         {
-            return View(); // Pode voltar para apenas View(), sem o caminho completo
+            return View(); 
         }
 
-        // ==========================================
-        // 1. NOVA ACTION QUE RECEBE O CLIQUE DO BOTÃO
-        // ==========================================
         [HttpPost]
         public IActionResult Acessibilidade(Configuracao model)
         {
@@ -64,7 +60,7 @@ namespace ConnectFlow.Controllers
                 {
                     MailMessage mail = new MailMessage();
                     mail.From = new MailAddress("connectflow.solucoes@gmail.com", "ConnectFlow Solutions");
-                    mail.To.Add("seu-email-pessoal@hotmail.com"); // Coloque seu e-mail real aqui
+                    mail.To.Add("seu-email-pessoal@hotmail.com");
                     mail.Subject = "Teste de Acessibilidade";
                     mail.Body = "<h1>Funciona!</h1><p>O envio de e-mail pelo seu sistema está operacional.</p>";
                     mail.IsBodyHtml = true;
@@ -80,7 +76,7 @@ namespace ConnectFlow.Controllers
                 }
                 catch (Exception ex)
                 {
-                    // Agora, como estamos dentro de um Controller, isso vai funcionar
+                
                     return Content("ERRO AO ENVIAR: " + ex.Message);
                 }
             }

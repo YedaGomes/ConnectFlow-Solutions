@@ -5,11 +5,10 @@
 }
 
 <style>
-    /* Resolve o problema do rodapé: força o container a ocupar a tela toda */
     .page-wrapper {
         display: flex;
         flex-direction: column;
-        min-height: 85vh; /* Ocupa quase toda a altura da tela, empurrando o rodapé para baixo */
+        min-height: 85vh; 
         justify-content: center;
     }
 
@@ -22,10 +21,10 @@
         color: #94a3b8 !important;
     }
 
-        .step-text.active {
-            color: #38bdf8 !important;
-            font-weight: 700;
-        }
+    .step-text.active {
+        color: #38bdf8 !important;
+        font-weight: 700;
+    }
 
     .custom-card {
         background-color: #ffffff !important;
@@ -78,7 +77,6 @@
         text-align: center;
     }
 </style>
-
 <div class="page-wrapper">
     <form asp-action="Acessibilidade" method="post">
         <div class="container text-center">

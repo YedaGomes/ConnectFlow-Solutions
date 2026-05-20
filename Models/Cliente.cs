@@ -11,7 +11,6 @@ namespace ConnectFlow.Models
         [Column("ID")]
         public int IdCliente { get; set; }
 
-
         [Required(ErrorMessage = "O CNPJ é obrigatório")]
         [StringLength(14, MinimumLength = 14, ErrorMessage = "O CNPJ deve ter 14 dígitos")]
         public string Cnpj { get; set; } = string.Empty;
@@ -32,16 +31,11 @@ namespace ConnectFlow.Models
         [StringLength(100)]
         public string ResponsavelTecnico { get; set; } = string.Empty;
 
-        // --- CONFIGURAÇÃO DE INTEGRAÇÃO (TELA 2) ---
-        // Aqui você adiciona os campos que aparecem no seu protótipo do Figma
-
         public string SistemasOrigem { get; set; } = string.Empty;
         public string SistemasDestino { get; set; } = string.Empty;
         public string VolumeDadosMensal { get; set; } = string.Empty;
-
-        // --- ACESSIBILIDADE (TELA 3) ---
-
-        public bool SuporteLibras { get; set; } // No banco é o BIT (0 ou 1)
+        
+        public bool SuporteLibras { get; set; } 
         public bool NotificacoesEmail { get; set; }
 
         public DateTime DataCadastro { get; set; } = DateTime.Now;
