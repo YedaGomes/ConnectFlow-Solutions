@@ -47,39 +47,4 @@ O sistema segue o padrão **MVC (Model-View-Controller)**, garantindo uma arquit
 
 Abaixo, apresento as principais interfaces do ConnectFlow, organizadas por funcionalidade:
 
-### Entrada e Apresentação
-| Funcionalidade | Telas Iniciais do Sistema |
-| :--- | :--- |
-| **Tela Inicial de Entrada** | ![Tela Inicial de Entrada](Images/Tela%20Inicial%20de%20Entrada.png) |
-| **Nossas Soluções** | ![Nossas Soluções](Images/Nossas%20Soluções%20-%20Tela%20Inicial.png) |
-| **Sobre Nós** | ![Sobre Nós](Images/Sobre%20Nós%20-%20Tela%20Inicial.png) |
-| **Contato e Rodapé** | ![Contato e Rodapé](Images/Contato%20e%20Rodapé%20-%20Tela%20Inicial.png) |
 
-<br>
-<hr>
-<br>
-
-### Fluxo de Integração
-| Etapa | Cadastro Formulário Técnico |
-| :--- | :--- |
-| **Etapa 1** | ![Etapa 1](Images/Formulário%20Solicitar%20Integração%20Etapa%201.png) |
-| **Etapa 2** | ![Etapa 2](Images/Formulário%20Solicitar%20Integração%20Etapa%202.png) |
-| **Etapa 3** | ![Etapa 3](Images/Formulário%20Solicitar%20Integração%20Etapa%203.png) |
-| **Etapa 4** | ![Etapa 4](Images/Formulário%20Solicitar%20Integração%20Etapa%204.png) |
-
-<br>
-<hr>
-<br>
-
-### Soluções e Serviços
-
-| Funcionalidade | "Nossas Soluções" |
-| :--- | :--- |
-| **Automação - Tela 1** | ![Automação 2](Images/SOLUÇÕES%20-%20Automação%20Tela%202.png) |
-| **Automação - Tela 2** | ![Automação 1](Images/SOLUÇÕES%20-%20Automação%20Tela%201.png) |
-| **Consultoria - Tela 1** | ![Consultoria 1](Images/SOLUÇÕES%20-%20Consultoria%20Tela%201.png) |
-| **Consultoria - Tela 2** | ![Consultoria 2](Images/SOLUÇÕES%20-%20Consultoria%20Tela%202.png) |
-| **Integração APIs - Tela 1** | ![APIs 1](Images/SOLUÇÕES%20-%20Integração%20APIs%20Tela%201.png) |
-| **Integração APIs - Tela 2** | ![APIs 2](Images/SOLUÇÕES%20-%20Integração%20APIs%20Tela%202.png) |
-| **Integração Banco - Tela 1** | ![Banco 1](Images/SOLUÇÕES%20-%20Integração%20Banco%20Tela%201.png) |
-| **Integração Banco - Tela 2** | ![Banco 2](Images/SOLUÇÕES%20-%20Integração%20Banco%20Tela%202.png) |
