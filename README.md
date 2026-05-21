@@ -1,36 +1,38 @@
 # 🚀 ConnectFlow Solutions
 
-Sistema web desenvolvido para otimizar o fluxo de integração de dados entre sistemas, com foco em escalabilidade, usabilidade e acessibilidade.
+Sistema web desenvolvido para otimizar o fluxo de integração de dados entre sistemas, com foco em **escalabilidade**, **usabilidade** e **acessibilidade**.
 
 ---
 
-### **⚠️ AVISO DE PROJETO ACADÊMICO**
+## ⚠️ Aviso de Projeto Acadêmico
 
-Este projeto foi desenvolvido exclusivamente para fins acadêmicos, como parte de um trabalho prático para a **UNIP (Universidade Paulista)**. 
-
-Trata-se de uma **simulação de sistema**. As funcionalidades de integração apresentadas são protótipos para fins ilustrativos e não realizam a conexão ou transferência de dados reais entre sistemas.
+> **Este projeto foi desenvolvido exclusivamente para fins acadêmicos**, como parte de um trabalho prático para a **UNIP (Universidade Paulista)**.
+>
+> Trata-se de uma **simulação de sistema**. As funcionalidades de integração apresentadas são protótipos para fins ilustrativos e **não realizam a conexão ou transferência de dados reais** entre sistemas.
 
 ---
 
 ## 🛠 Tecnologias Utilizadas
 
-* **Back-end:** ASP.NET Core MVC (C#)
-* **Banco de Dados:** SQL Server
-* **ORM:** Entity Framework
-* **Front-end:** Bootstrap (responsivo)
-* **Acessibilidade:** Suporte a LIBRAS (via VLibras)
+| Camada | Tecnologia |
+| :--- | :--- |
+| **Back-end** | ASP.NET Core MVC (C#) |
+| **Banco de Dados** | SQL Server |
+| **ORM** | Entity Framework |
+| **Front-end** | Bootstrap (responsivo) |
+| **Acessibilidade** | Suporte a LIBRAS (via VLibras) |
 
 ---
 
 ## 🎯 Funcionalidades Principais
 
-* **Cadastro Multi-etapas:** Registro de clientes com validação de dados em tempo real.
-* **Configuração de Integração:** Interface intuitiva para seleção de sistemas de origem/destino e volumes de dados.
-* **Log de Transações:** Histórico completo de operações para garantir rastreabilidade.
-* **Acessibilidade:** Inclusão digital com suporte a LIBRAS em todas as telas da aplicação.
-* **Soluções Informativas:** Seção de conteúdo técnico e informativo para compreensão da "Nossas Soluções" voltadas para integração.
-* **Créditos:** Transparência com a listagem de recursos e mídias de terceiros utilizados no desenvolvimento, projetado com uma aba própria acessada ao rodapé do site.
-* **Central de Contato:** Espaço dedicado para suporte ao usuário e esclarecimento de dúvidas sobre a plataforma.
+- **Cadastro Multi-etapas** — Registro de clientes com validação de dados em tempo real.
+- **Configuração de Integração** — Interface intuitiva para seleção de sistemas de origem/destino e volumes de dados.
+- **Log de Transações** — Histórico completo de operações para garantir rastreabilidade.
+- **Acessibilidade** — Inclusão digital com suporte a LIBRAS em todas as telas da aplicação.
+- **Soluções Informativas** — Seção de conteúdo técnico e informativo para compreensão das soluções voltadas para integração.
+- **Créditos** — Transparência com a listagem de recursos e mídias de terceiros utilizados no desenvolvimento, acessível via rodapé do site.
+- **Central de Contato** — Espaço dedicado para suporte ao usuário e esclarecimento de dúvidas sobre a plataforma.
 
 ---
 
@@ -49,7 +51,7 @@ O sistema segue o padrão **MVC (Model-View-Controller)**, garantindo uma arquit
 
 Abaixo, apresento as principais interfaces do ConnectFlow, organizadas por funcionalidade:
 
-### 🏠 Apresentação
+## 🏠 Apresentação
 
 | Funcionalidade | Preview |
 | :--- | :--- |
@@ -60,7 +62,7 @@ Abaixo, apresento as principais interfaces do ConnectFlow, organizadas por funci
 
 ---
 
-### ⚙️ Fluxo de Integração
+## ⚙️ Fluxo de Integração
 
 | Etapa | Cadastro Formulário Técnico |
 | :--- | :--- |
@@ -71,16 +73,35 @@ Abaixo, apresento as principais interfaces do ConnectFlow, organizadas por funci
 
 ---
 
-### 💼 Soluções e Serviços
+## 💼 Soluções e Serviços
 
 | Funcionalidade | "Nossas Soluções" |
 | :--- | :--- |
-| **Automação — Tela 1** | ![Automação 1](Images/SOLUÇÕES%20-%20Automação%20Tela%201.png) |
-| **Automação — Tela 2** | ![Automação 2](Images/SOLUÇÕES%20-%20Automação%20Tela%202.png) |
-| **Consultoria — Tela 1** | ![Consultoria 1](Images/SOLUÇÕES%20-%20Consultoria%20Tela%201.png) |
-| **Consultoria — Tela 2** | ![Consultoria 2](Images/SOLUÇÕES%20-%20Consultoria%20Tela%202.png) |
 | **Integração Banco — Tela 1** | ![Banco 1](Images/SOLUÇÕES%20-%20Integração%20Banco%20Tela%201.png) |
 | **Integração Banco — Tela 2** | ![Banco 2](Images/SOLUÇÕES%20-%20Integração%20Banco%20Tela%202.png) |
-| **Integração APIs — Tela 1** | ![APIs 1](Images/SOLUÇÕES%20-%20Integração%20APIs%20Tela%201.png) |
-| **Integração APIs — Tela 2** | ![APIs 2](Images/SOLUÇÕES%20-%20Integração%20APIs%20Tela%202.png) |
+| **Automação — Tela 1** | ![Automação 1](Images/SOLUÇÕES%20-%20Automação%20Tela%201.png) |
+| **Automação — Tela 2** | ![Automação 2](Images/SOLUÇÕES%20-%20Automação%20Tela%202.png) |
+| **Integração API — Tela 1** | ![API 1](Images/Integracao%20API%20Tela%201.png) |
+| **Integração API — Tela 2** | ![API 2](Images/Integracao%20API%20Tela%202.png) |
+| **Consultoria — Tela 1** | ![Consultoria 1](Images/SOLUÇÕES%20-%20Consultoria%20Tela%201.png) |
+| **Consultoria — Tela 2** | ![Consultoria 2](Images/SOLUÇÕES%20-%20Consultoria%20Tela%202.png) |
+
+---
+
+## 🎨 Créditos e Acessibilidade
+
+### Créditos de Imagens
+Transparência com a listagem de recursos e mídias de terceiros utilizados no desenvolvimento, projetado com uma aba própria acessada ao rodapé do site.
+
+| Funcionalidade | Preview |
+| :--- | :--- |
+| **Créditos de Imagens** | ![Créditos](Images/Cr%C3%A9ditos%20de%20Imagens%20(Rodap%C3%A9).png) |
+
+### Suporte a LIBRAS
+Inclusão digital com suporte a LIBRAS (Língua Brasileira de Sinais) via VLibras em todas as telas da aplicação. Abaixo, exemplo de tradução ativa na Etapa 4 do formulário.
+(Utilizado Script de Libras em arquivo razor Layout.cshtml)
+
+| Funcionalidade | Preview |
+| :--- | :--- |
+| **Teste de Tradução LIBRAS — Etapa 4 do Formulário** | ![LIBRAS](Images/Libras%20Teste%20de%20Tradu%C3%A7%C3%A3o%20da%20Etapa%204.png) |
 
