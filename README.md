@@ -48,6 +48,18 @@ O sistema segue o padrão **MVC (Model-View-Controller)**, garantindo uma arquit
 
 ---
 
+## 👥 Equipe do Projeto
+O desenvolvimento do ConnectFlow Solutions foi realizado de forma colaborativa, com a divisão de tarefas alinhada às competências técnicas de cada integrante da equipe:
+
+| Nome do Colaborador | GitHub |
+| :--- | :--- |
+| **Gustavo Rodrigues** | [@sleepy-berry](https://github.com/sleepy-berry) |
+| **Jefferson de Souza** | [@jsnascimento](https://github.com/jsnascimento) |
+| **Jéssica Oliveira** | [@jessicab011](https://github.com/jessicab011) |
+| **Pedro Henrique** | [@P3dropmed](https://github.com/P3dropmed) |
+| **Ramon Santos** | [@ramonsilva-dev](https://github.com/ramonsilva-dev) |
+| **Yeda Gomes** | [@YedaGomes](https://github.com/YedaGomes) |
+
 ## 📸 Visual do Sistema
 
 Abaixo, apresento as principais interfaces do ConnectFlow, organizadas por funcionalidade:
