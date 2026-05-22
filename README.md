@@ -1,6 +1,7 @@
 # 🚀 ConnectFlow Solutions
 
 Sistema web desenvolvido para otimizar o fluxo de integração de dados entre sistemas, com foco em **escalabilidade**, **usabilidade** e **acessibilidade**.
+O presente trabalho reflete o empenho coletivo de uma equipe de seis alunos, que dedicaram-se à análise, modelagem e implementação da plataforma ConnectFlow Solutions, unindo conhecimentos acadêmicos em Análise e Desenvolvimento de Sistemas para solucionar os problemas de fragmentação de dados propostos.
 
 ---
 
